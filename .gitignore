@@ -1,2 +1,3 @@
 *.pyidx
 ~$*
+.DS_Store
