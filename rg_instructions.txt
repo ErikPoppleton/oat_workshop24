@@ -1,5 +1,7 @@
 How to RG:
 
+SHOW THE STRUCTURE FIRST!!!!!!!!!
+
 1. Make rg.py file
 2. Copy oxDNA/analysis/src/oxDNA_analysis_tools/skeleton.py
 3. Look up the formula for rg
