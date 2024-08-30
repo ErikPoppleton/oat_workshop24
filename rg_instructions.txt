@@ -1,7 +1,7 @@
 How to RG:
 
 1. Make rg.py file
-2. Copy skeleton.py
+2. Copy oxDNA/analysis/src/oxDNA_analysis_tools/skeleton.py
 3. Look up the formula for rg
 
     Rg^2 = sum([r^2 for r in radiuses])/n
