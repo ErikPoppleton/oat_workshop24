@@ -2,14 +2,13 @@ How to RG:
 
 SHOW THE STRUCTURE FIRST!!!!!!!!!
 
-1. Make rg.py file
-2. Copy oxDNA/analysis/src/oxDNA_analysis_tools/skeleton.py
-3. Look up the formula for rg
+1. Copy oxDNA/analysis/src/oxDNA_analysis_tools/skeleton.py
+2. Look up the formula for rg
 
     Rg^2 = sum([r^2 for r in radiuses])/n
 
-4. Delete "arrrrrg" and all the places "optional_argument"/"flag1" appears
-5. Make the compute function work
+(3). Delete "arrrrrg" and all the places "optional_argument"/"flag1" appears
+4. Make the compute function work
 
     confs = get_confs(ctx.top_info, ctx.traj_info, chunk_id*chunk_size, chunk_size)     # Show what a configuration is by importing it and looking at the docstring
     poses = np.array([inbox(c).positions for c in confs])                               # Have to import inbox
@@ -20,12 +19,12 @@ SHOW THE STRUCTURE FIRST!!!!!!!!!
     rg = np.sqrt(msd)
     return(rg)
 
-6. Change the default output file name, program name, program description, etc
-7. Change the output file to be a op.json file
+5. Change the default output file name, program name, program description, etc
+6. Change the output file to be a op.json file
     from json import dump
 
     outfile = "rg.json"
 
     out_obj = {"rg" : [o for o in out]}
     dump(out_obj, f)
-8. Install oat and see that it works
+7. Install oat and see that it works
